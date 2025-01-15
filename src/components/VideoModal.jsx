@@ -80,7 +80,7 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             width: { xs: '90%', sm: '400px' },
-            maxHeight: '90vh',
+            maxHeight: '80vh',
             overflowY: 'auto',
             overflowX: 'hidden',
             backgroundColor: '#03122f',
@@ -122,8 +122,8 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
           <Button
             sx={{
               position: 'absolute',
-              top: '15px',
-              right: '-20px',
+              top: '-5px',
+              right: '-10px',
               fontSize: '2.2rem',
               cursor: 'pointer',
               color: '#6BD1FF',
@@ -148,16 +148,16 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
               onChange={handleChange}
               error={!!errors.title}
               helperText={errors.title}
-              margin="normal"
+              margin="dense"
               InputLabelProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   color: '#6BD1FF',
                   fontWeight: 'bold',
                   fontSize: '1rem',
                 },
               }}
               InputProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   backgroundColor: '#000',
                   border: '2px solid #6BD1FF',
                   borderRadius: '5px',
@@ -172,7 +172,7 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
             />
             <FormControl fullWidth margin="normal" error={!!errors.category}>
               <InputLabel
-                sx={{
+                sx={{marginBottom: '-5px',
                   color: '#6BD1FF',
                   fontWeight: 'bold',
                   fontSize: '1rem',
@@ -185,7 +185,7 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
                 name="category"
                 value={formData.category}
                 onChange={handleChange}
-                sx={{
+                sx={{marginBottom: '-5px',
                   backgroundColor: '#000',
                   border: '2px solid #6BD1FF',
                   borderRadius: '5px',
@@ -213,16 +213,16 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
               onChange={handleChange}
               error={!!errors.image}
               helperText={errors.image}
-              margin="normal"
+              margin="dense"
               InputLabelProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   color: '#6BD1FF',
                   fontWeight: 'bold',
                   fontSize: '1rem',
                 },
               }}
               InputProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   backgroundColor: '#000',
                   border: '2px solid #6BD1FF',
                   borderRadius: '5px',
@@ -243,16 +243,16 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
               onChange={handleChange}
               error={!!errors.video}
               helperText={errors.video}
-              margin="normal"
+              margin="dense"
               InputLabelProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   color: '#6BD1FF',
                   fontWeight: 'bold',
                   fontSize: '1rem',
                 },
               }}
               InputProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   backgroundColor: '#000',
                   border: '2px solid #6BD1FF',
                   borderRadius: '5px',
@@ -273,16 +273,16 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
               onChange={handleChange}
               multiline
               rows={3}
-              margin="normal"
+              margin="dense"
               InputLabelProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   color: '#6BD1FF',
                   fontWeight: 'bold',
                   fontSize: '1rem',
                 },
               }}
               InputProps={{
-                sx: {
+                sx: {marginBottom: '-5px',
                   backgroundColor: '#000',
                   border: '2px solid #6BD1FF',
                   borderRadius: '5px',
