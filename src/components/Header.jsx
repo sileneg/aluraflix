@@ -31,7 +31,7 @@ const Header = ({ onNewVideoClick }) => {
           }}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/logo.png`}
+            src="/aluraflix/logo.png"
             alt="AluraFlix Logo"
             style={{
               height: isSmallScreen ? '40px' : '60px',
