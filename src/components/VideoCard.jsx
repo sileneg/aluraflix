@@ -179,7 +179,7 @@ const VideoCard = ({ video, categoryTitle, onEdit, onDelete }) => {
             }}
           >
             <img
-              src="aluraflix/editar.png"
+              src="/aluraflix/editar.png"
               alt="Editar"
               style={{ width: '20px', marginRight: '5px' }}
             />
@@ -207,7 +207,7 @@ const VideoCard = ({ video, categoryTitle, onEdit, onDelete }) => {
             }}
           >
             <img
-              src="aluraflix/eliminar.png"
+              src="/aluraflix/eliminar.png"
               alt="Eliminar"
               style={{ width: '20px', marginRight: '5px' }}
             />
