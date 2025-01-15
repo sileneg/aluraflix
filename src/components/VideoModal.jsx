@@ -80,7 +80,7 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             width: { xs: '90%', sm: '400px' },
-            maxHeight: '80vh',
+            maxHeight: '100vh',
             overflowY: 'auto',
             overflowX: 'hidden',
             backgroundColor: '#03122f',
