@@ -15,5 +15,8 @@ export default defineConfig(({ mode }) => {
         '@': '/src',
       },
     },
+    build: {
+      outDir: 'dist',
+    },
   };
 });
