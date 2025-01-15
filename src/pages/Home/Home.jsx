@@ -24,7 +24,7 @@ const Home = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await api.get('/videos');
+        const response = await api.get('/');
         if (response.status === 200) {
           setVideos(response.data);
         } else {
@@ -93,7 +93,7 @@ const Home = () => {
     );
     if (confirm) {
       try {
-        const response = await api.delete(`/videos/${video.id}`);
+        const response = await api.delete(`/${video.id}`);
         if (response.status === 200) {
           setVideos((prev) => prev.filter((v) => v.id !== video.id));
           setSuccessMessage('¡Video eliminado exitosamente!');
@@ -110,7 +110,7 @@ const Home = () => {
     if (currentVideo) {
       // Editar video existente
       try {
-        const response = await api.put(`/videos/${currentVideo.id}`, videoData);
+        const response = await api.put(`/${currentVideo.id}`, videoData);
         if (response.status === 200) {
           setVideos((prev) =>
             prev.map((v) => (v.id === currentVideo.id ? response.data : v))
@@ -127,7 +127,7 @@ const Home = () => {
     } else {
       // Agregar nuevo video
       try {
-        const response = await api.post('/videos', videoData);
+        const response = await api.post('/', videoData);
         if (response.status === 201) {
           setVideos((prev) => [...prev, response.data]);
           setIsFormOpen(false);
