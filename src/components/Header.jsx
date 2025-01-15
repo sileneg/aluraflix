@@ -69,7 +69,7 @@ const Header = ({ onNewVideoClick }) => {
           }}
         >
           <Button
-            href="/"
+            href={`${process.env.PUBLIC_URL}/`}
             startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />}
             sx={{
               fontFamily: theme.typography.fontFamily,
