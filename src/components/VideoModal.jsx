@@ -28,6 +28,7 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
   useEffect(() => {
     if (video) {
       setFormData(video);
+      setErrors({}); // Reiniciar errores al abrir el modal para editar
     } else {
       setFormData({
         title: '',
@@ -36,6 +37,7 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
         video: '',
         description: '',
       });
+      setErrors({}); // Reiniciar errores al abrir el modal para un nuevo video
     }
   }, [video]);
 
@@ -77,12 +79,11 @@ const VideoModal = ({ isOpen, onClose, onSave, video }) => {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: { xs: '95%', sm: 450 },
-            maxHeight: '90vh',
+            width: { xs: '90%', sm: '400px' },
+            maxHeight: '85vh',
             overflowY: 'auto',
-            overflowX: 'hidden',
             backgroundColor: '#03122f',
-            padding: '40px 20px',
+            padding: '30px 20px',
             border: '5px solid transparent',
             borderRadius: '15px',
             boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.3)',
