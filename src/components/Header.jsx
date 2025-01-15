@@ -50,7 +50,7 @@ const Header = ({ onNewVideoClick }) => {
               variant="h6"
               component="div"
               sx={{
-                fontSize: '1.5rem',
+                fontSize: '1.1rem',
                 fontWeight: theme.typography.h1.fontWeight,
                 color: theme.palette.text.primary,
               }}
@@ -70,7 +70,7 @@ const Header = ({ onNewVideoClick }) => {
         >
           <Button
             href="/"
-            startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />}
+            startIcon={<HomeIcon sx={{ fontSize: '1.3rem' }} />}
             sx={{
               fontFamily: theme.typography.fontFamily,
               color: theme.palette.text.primary,
@@ -92,13 +92,13 @@ const Header = ({ onNewVideoClick }) => {
           </Button>
           <Button
             onClick={onNewVideoClick}
-            startIcon={<AddIcon sx={{ fontSize: '1.5rem' }} />}
+            startIcon={<AddIcon sx={{ fontSize: '1.3rem' }} />}
             sx={{
               fontFamily: theme.typography.fontFamily,
               color: theme.palette.text.primary,
               textTransform: theme.typography.button.textTransform,
               fontWeight: theme.typography.button.fontWeight,
-              fontSize: isSmallScreen ? '0' : '1.2rem',
+              fontSize: isSmallScreen ? '0' : '1.1rem',
               transition: 'transform 0.3s ease, box-shadow 0.3s ease',
               '& .MuiButton-startIcon': {
                 marginRight: isSmallScreen ? 0 : '8px',

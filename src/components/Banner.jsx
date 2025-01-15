@@ -86,7 +86,7 @@ const Banner = ({ setCategoryFilter, videoSectionRef }) => {
           flexDirection: { xs: 'column', sm: 'row' },
           justifyContent: 'space-between',
           alignItems: 'center',
-          gap: '40px',
+          gap: '30px',
           padding: '20px',
           boxSizing: 'border-box',
         }}
