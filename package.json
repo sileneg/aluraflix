@@ -2,7 +2,6 @@
   "name": "aluraflix-vite",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "homepage": "https://sileneg.github.io/aluraflix/",
 
   "scripts": {
