@@ -2,6 +2,7 @@ import { AppBar, Toolbar, Typography, Button, Box, useTheme, useMediaQuery } fro
 import HomeIcon from '@mui/icons-material/Home';
 import AddIcon from '@mui/icons-material/Add';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Header = ({ onNewVideoClick }) => {
   const theme = useTheme();
