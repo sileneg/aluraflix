@@ -70,7 +70,7 @@ const Header = ({ onNewVideoClick }) => {
           }}
         >
           <Button
-            href={`${process.env.PUBLIC_URL}/`}
+            href={`${process.env.PUBLIC_URL || '/aluraflix'}/`}
             startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />}
             sx={{
               fontFamily: theme.typography.fontFamily,
