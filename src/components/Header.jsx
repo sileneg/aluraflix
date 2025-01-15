@@ -2,7 +2,6 @@ import { AppBar, Toolbar, Typography, Button, Box, useTheme, useMediaQuery } fro
 import HomeIcon from '@mui/icons-material/Home';
 import AddIcon from '@mui/icons-material/Add';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 const Header = ({ onNewVideoClick }) => {
   const theme = useTheme();
@@ -32,7 +31,7 @@ const Header = ({ onNewVideoClick }) => {
           }}
         >
           <img
-            src="/aluraflix/logo.png"
+            src="logo.png"
             alt="AluraFlix Logo"
             style={{
               height: isSmallScreen ? '40px' : '60px',
@@ -70,7 +69,7 @@ const Header = ({ onNewVideoClick }) => {
           }}
         >
           <Button
-            href={`${process.env.PUBLIC_URL || '/aluraflix'}/`}
+            href="/"
             startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />}
             sx={{
               fontFamily: theme.typography.fontFamily,
