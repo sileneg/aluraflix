@@ -24,7 +24,7 @@ const Footer = () => {
         }}
       >
         <img
-          src="/logo.png"
+          src="aluraflix/logo.png"
           alt="AluraFlix Logo"
           style={{ height: '40px', marginBottom: '10px' }}
         />
