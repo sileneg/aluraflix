@@ -54,7 +54,7 @@ const Banner = ({ setCategoryFilter, videoSectionRef }) => {
         position: 'relative',
         width: '100vw',
         height: '550px',
-        backgroundImage: `url('/aluraflix/fondobanner.png')`,
+        backgroundImage: `url('fondobanner.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
